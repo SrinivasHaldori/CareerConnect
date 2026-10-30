@@ -1,0 +1,141 @@
+.navbar-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(15, 45, 74, 0.04);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-icon-box {
+  width: 38px;
+  height: 38px;
+  background-color: var(--navy-primary);
+  color: var(--text-white);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(15, 45, 74, 0.15);
+}
+
+.logo-text {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--navy-primary);
+  letter-spacing: -0.5px;
+}
+
+.logo-text-accent {
+  color: var(--blue-accent);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-item {
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 6px 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-item:hover {
+  color: var(--navy-primary);
+}
+
+.nav-item.active {
+  color: var(--navy-primary);
+  font-weight: 700;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--navy-primary);
+  border-radius: var(--radius-pill);
+}
+
+.navbar-cta {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--navy-primary);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+}
+
+.mobile-menu-toggle:hover {
+  background-color: var(--bg-subtle);
+}
+
+.mobile-menu-dropdown {
+  display: none;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 24px 20px 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.mobile-nav-item {
+  display: block;
+  padding: 12px 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav-item.active {
+  color: var(--navy-primary);
+  font-weight: 700;
+}
+
+.mobile-cta-wrapper {
+  margin-top: 16px;
+}
+
+@media (max-width: 840px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .mobile-menu-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,234 @@
+:root {
+  --navy-primary: #0f2d4a;
+  --navy-dark: #0a1f33;
+  --navy-light: #183e63;
+  --blue-accent: #1e5cb3;
+  --blue-soft: #eaf1fa;
+  
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-subtle: #f1f5f9;
+  
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-white: #ffffff;
+  
+  --border-color: #e2e8f0;
+  --border-focus: #1e5cb3;
+  
+  --status-pending: #d97706;
+  --status-pending-bg: #fef3c7;
+  --status-shortlisted: #2563eb;
+  --status-shortlisted-bg: #eff6ff;
+  --status-accepted: #16a34a;
+  --status-accepted-bg: #dcfce7;
+  --status-rejected: #dc2626;
+  --status-rejected-bg: #fee2e2;
+
+  --shadow-sm: 0 1px 3px rgba(15, 45, 74, 0.06), 0 1px 2px rgba(15, 45, 74, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 45, 74, 0.08), 0 2px 4px rgba(15, 45, 74, 0.04);
+  --shadow-lg: 0 12px 24px rgba(15, 45, 74, 0.12), 0 4px 8px rgba(15, 45, 74, 0.06);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 9999px;
+
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --transition: all 0.2s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* Button utility classes */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--navy-primary);
+  color: var(--text-white);
+  border-color: var(--navy-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--navy-dark);
+  border-color: var(--navy-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--navy-primary);
+  border-color: var(--border-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--blue-soft);
+  border-color: var(--navy-primary);
+  color: var(--navy-primary);
+}
+
+.btn-accent {
+  background-color: var(--blue-accent);
+  color: var(--text-white);
+}
+
+.btn-accent:hover {
+  background-color: #16468a;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-danger {
+  background-color: #fff;
+  color: var(--status-rejected);
+  border-color: #fca5a5;
+}
+
+.btn-danger:hover {
+  background-color: var(--status-rejected-bg);
+  border-color: var(--status-rejected);
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.3px;
+}
+
+.badge-navy {
+  background-color: var(--blue-soft);
+  color: var(--navy-primary);
+}
+
+.badge-pending {
+  background-color: var(--status-pending-bg);
+  color: var(--status-pending);
+}
+
+.badge-shortlisted {
+  background-color: var(--status-shortlisted-bg);
+  color: var(--status-shortlisted);
+}
+
+.badge-accepted {
+  background-color: var(--status-accepted-bg);
+  color: var(--status-accepted);
+}
+
+.badge-rejected {
+  background-color: var(--status-rejected-bg);
+  color: var(--status-rejected);
+}
+
+/* Section headers */
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 40px auto;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--blue-accent);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy-primary);
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}

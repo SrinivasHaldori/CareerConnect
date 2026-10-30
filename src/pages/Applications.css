@@ -1,0 +1,437 @@
+.applications-page {
+  padding-bottom: 60px;
+}
+
+.applications-header {
+  background-color: var(--navy-primary);
+  color: #fff;
+  padding: 44px 0 50px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.applications-container {
+  margin-top: -24px;
+}
+
+/* Control Bar Card */
+.control-bar-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.view-switcher-tabs {
+  display: flex;
+  gap: 8px;
+  background-color: var(--bg-subtle);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+}
+
+.view-tab {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.view-tab.active {
+  background-color: #ffffff;
+  color: var(--navy-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.search-app-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+.search-app-field svg {
+  color: var(--text-muted);
+}
+
+.search-app-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.clear-search-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Status Filter Tabs */
+.status-tabs-strip {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.status-filter-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.status-filter-tab:hover {
+  border-color: var(--navy-primary);
+  color: var(--navy-primary);
+}
+
+.status-filter-tab.active {
+  background-color: var(--navy-primary);
+  border-color: var(--navy-primary);
+  color: #ffffff;
+}
+
+.status-tab-count {
+  font-size: 0.78rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+}
+
+.status-filter-tab.active .status-tab-count {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* Applications Table */
+.applications-table-wrapper {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+.applications-table th {
+  background-color: var(--bg-subtle);
+  color: var(--navy-primary);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.applications-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.applications-table tr:last-child td {
+  border-bottom: none;
+}
+
+.applications-table tr:hover {
+  background-color: #fbfcfe;
+}
+
+/* Candidate cell */
+.cand-info-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cand-name {
+  font-weight: 700;
+  color: var(--navy-primary);
+}
+
+.cand-email {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.cand-phone {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Job cell */
+.job-info-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-job-title {
+  font-weight: 600;
+  color: var(--navy-primary);
+  transition: color 0.2s;
+}
+
+.app-job-title:hover {
+  color: var(--blue-accent);
+}
+
+.app-company {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.app-date-cell {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.app-qual-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 220px;
+}
+
+.app-education {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-experience {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resume-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--blue-accent);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  background-color: var(--blue-soft);
+  white-space: nowrap;
+}
+
+.resume-link-btn:hover {
+  background-color: #dbeafe;
+}
+
+.no-resume-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Status selector */
+.status-selector-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 135px;
+}
+
+.status-dropdown-select {
+  font-size: 0.78rem;
+  padding: 4px 6px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: #fff;
+  cursor: pointer;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.status-dropdown-select:focus {
+  border-color: var(--navy-primary);
+}
+
+.delete-app-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-app-btn:hover {
+  color: var(--status-rejected);
+  background-color: var(--status-rejected-bg);
+}
+
+/* Empty Applications State */
+.empty-applications-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 60px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-app-icon {
+  width: 68px;
+  height: 68px;
+  background-color: var(--bg-subtle);
+  color: var(--text-muted);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+}
+
+.empty-applications-card h3 {
+  font-size: 1.3rem;
+  color: var(--navy-primary);
+  margin-bottom: 8px;
+}
+
+.empty-applications-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Candidates Grid */
+.candidates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.candidate-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+}
+
+.cand-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cand-avatar {
+  width: 44px;
+  height: 44px;
+  background-color: var(--navy-primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.cand-card-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy-primary);
+}
+
+.cand-card-email {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.cand-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.cand-detail-line strong {
+  color: var(--navy-primary);
+}
+
+.cand-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .control-bar-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-app-field {
+    min-width: 100%;
+  }
+  .applications-table th,
+  .applications-table td {
+    padding: 12px 10px;
+  }
+}

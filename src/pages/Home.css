@@ -1,0 +1,355 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-padding {
+  padding: 64px 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--navy-primary);
+  color: #fff;
+  padding: 80px 0 90px 0;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-content {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #93c5fd;
+  background-color: rgba(30, 92, 179, 0.3);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  max-width: 680px;
+  margin: 0 auto 36px auto;
+  line-height: 1.6;
+}
+
+/* Hero Search Form */
+.hero-search-form {
+  background-color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 16px 32px rgba(10, 31, 51, 0.28);
+  max-width: 820px;
+  margin: 0 auto 24px auto;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  padding: 8px 14px;
+  color: var(--navy-primary);
+}
+
+.search-field svg {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  background: transparent;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
+.search-divider {
+  width: 1px;
+  height: 32px;
+  background-color: var(--border-color);
+}
+
+.search-submit-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.hero-popular-keywords {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.hero-popular-keywords button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 3px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.hero-popular-keywords button:hover {
+  background: #ffffff;
+  color: var(--navy-primary);
+}
+
+/* Categories Section */
+.categories-section {
+  background-color: var(--bg-page);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--navy-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.category-icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: var(--blue-soft);
+  color: var(--navy-primary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy-primary);
+  margin-bottom: 6px;
+}
+
+.category-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Featured Jobs Section */
+.featured-jobs-section {
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-header-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  gap: 20px;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+.empty-featured {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-md);
+}
+
+.mobile-view-all-wrapper {
+  display: none;
+  margin-top: 24px;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+  background-color: var(--bg-page);
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.why-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: var(--navy-primary);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.why-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy-primary);
+  margin-bottom: 10px;
+}
+
+.why-card-description {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* CTA Banner Section */
+.cta-banner-section {
+  padding-bottom: 20px;
+  background-color: var(--bg-page);
+}
+
+.cta-card {
+  background-color: var(--navy-primary);
+  border-radius: var(--radius-lg);
+  padding: 44px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+.cta-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.cta-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.cta-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  max-width: 600px;
+}
+
+.cta-action {
+  flex-shrink: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero-heading {
+    font-size: 2.3rem;
+  }
+  .cta-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 24px;
+  }
+  .cta-text {
+    margin: 0 auto;
+  }
+  .desktop-only-btn {
+    display: none;
+  }
+  .mobile-view-all-wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0 60px 0;
+  }
+  .hero-heading {
+    font-size: 1.9rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  .hero-search-form {
+    flex-direction: column;
+    padding: 12px;
+    gap: 8px;
+  }
+  .search-divider {
+    width: 100%;
+    height: 1px;
+  }
+  .search-submit-btn {
+    width: 100%;
+  }
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+}

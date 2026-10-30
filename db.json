@@ -1,0 +1,268 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Frontend React Developer",
+      "company": "Apex Cloud Technologies",
+      "location": "San Francisco, CA (Hybrid)",
+      "salary": "$95,000 - $120,000 / year",
+      "experience": "Mid Level (2-4 years)",
+      "jobType": "Full-Time",
+      "category": "Software Development",
+      "description": "We are seeking a talented and proactive Frontend React Developer to build responsive, accessible, and high-performance web applications. You will collaborate closely with product designers, backend engineers, and QA specialists to deliver modern user interfaces that delight thousands of daily active users.",
+      "skills": [
+        "React",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "REST APIs",
+        "Git"
+      ],
+      "postedDate": "2026-10-24",
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "Full Stack Software Engineer",
+      "company": "Nexus Health Solutions",
+      "location": "Austin, TX (Remote)",
+      "salary": "$110,000 - $140,000 / year",
+      "experience": "Senior (5+ years)",
+      "jobType": "Remote",
+      "category": "Software Development",
+      "description": "Nexus Health Solutions is looking for a Senior Full Stack Engineer experienced with modern JavaScript frameworks and Node.js microservices. In this role, you will architect secure healthcare data workflows, optimize SQL/NoSQL queries, and mentor junior developers on agile best practices.",
+      "skills": [
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Docker",
+        "TypeScript"
+      ],
+      "postedDate": "2026-10-26",
+      "featured": true
+    },
+    {
+      "id": "3",
+      "title": "UI/UX Product Designer",
+      "company": "Elevate Studio",
+      "location": "New York, NY (On-site)",
+      "salary": "$85,000 - $105,000 / year",
+      "experience": "Mid Level (2-4 years)",
+      "jobType": "Full-Time",
+      "category": "Product Design",
+      "description": "Elevate Studio is searching for a creative UI/UX Product Designer who can turn complex enterprise workflows into intuitive, elegant digital experiences. You will conduct user research, create high-fidelity Figma prototypes, and establish scalable design system tokens.",
+      "skills": [
+        "Figma",
+        "User Research",
+        "Wireframing",
+        "Design Systems",
+        "Prototyping"
+      ],
+      "postedDate": "2026-10-27",
+      "featured": true
+    },
+    {
+      "id": "4",
+      "title": "Junior Web Developer",
+      "company": "BrightWave Media",
+      "location": "Chicago, IL (Hybrid)",
+      "salary": "$60,000 - $75,000 / year",
+      "experience": "Entry Level (0-2 years)",
+      "jobType": "Full-Time",
+      "category": "Software Development",
+      "description": "An exciting entry-level opportunity for a motivated Junior Web Developer eager to sharpen their coding skills. You will assist our engineering team in creating client landing pages, implementing responsive CSS layouts, and testing cross-browser compatibility.",
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React",
+        "Responsive Design"
+      ],
+      "postedDate": "2026-10-28",
+      "featured": true
+    },
+    {
+      "id": "5",
+      "title": "Data Analyst & BI Specialist",
+      "company": "Vanguard Financial Analytics",
+      "location": "Boston, MA (Hybrid)",
+      "salary": "$90,000 - $115,000 / year",
+      "experience": "Mid Level (2-5 years)",
+      "jobType": "Full-Time",
+      "category": "Data & Analytics",
+      "description": "Join Vanguard Financial Analytics to transform raw financial datasets into strategic visual insights. You will write robust SQL queries, build executive PowerBI dashboards, and collaborate with business stakeholders to drive data-informed decision making.",
+      "skills": [
+        "SQL",
+        "PowerBI",
+        "Python",
+        "Excel",
+        "Data Visualization"
+      ],
+      "postedDate": "2026-10-22",
+      "featured": false
+    },
+    {
+      "id": "6",
+      "title": "DevOps & Cloud Engineer",
+      "company": "Skyline Cloud Services",
+      "location": "Seattle, WA (Remote)",
+      "salary": "$125,000 - $155,000 / year",
+      "experience": "Senior (5+ years)",
+      "jobType": "Remote",
+      "category": "DevOps & Cloud",
+      "description": "Skyline Cloud Services is hiring an experienced DevOps Engineer to enhance our AWS infrastructure and CI/CD automation pipelines. You will maintain Kubernetes clusters, implement infrastructure as code with Terraform, and monitor platform uptime.",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "Docker",
+        "CI/CD",
+        "Linux"
+      ],
+      "postedDate": "2026-10-25",
+      "featured": false
+    },
+    {
+      "id": "7",
+      "title": "Digital Marketing Strategist",
+      "company": "Peak Growth Agency",
+      "location": "Denver, CO (Remote)",
+      "salary": "$70,000 - $88,000 / year",
+      "experience": "Mid Level (2-4 years)",
+      "jobType": "Contract",
+      "category": "Marketing",
+      "description": "We are looking for a results-driven Digital Marketing Strategist to spearhead multi-channel user acquisition campaigns. You will oversee SEO strategy, manage paid search and social campaigns, and track conversion funnels across Google Analytics.",
+      "skills": [
+        "SEO",
+        "Google Ads",
+        "Content Strategy",
+        "Google Analytics",
+        "Social Media"
+      ],
+      "postedDate": "2026-10-23",
+      "featured": false
+    },
+    {
+      "id": "8",
+      "title": "Software Engineering Intern",
+      "company": "Innovate Labs",
+      "location": "San Jose, CA (On-site)",
+      "salary": "$35 - $45 / hour",
+      "experience": "Entry Level (0-1 year)",
+      "jobType": "Internship",
+      "category": "Software Development",
+      "description": "Innovate Labs welcomes current university students or recent graduates for a 6-month hands-on Software Engineering Internship. You will work side-by-side with senior engineers on real customer features, participate in code reviews, and learn production CI/CD workflows.",
+      "skills": [
+        "JavaScript",
+        "Python",
+        "Git",
+        "Problem Solving",
+        "Data Structures"
+      ],
+      "postedDate": "2026-10-29",
+      "featured": false
+    }
+  ],
+  "candidates": [
+    {
+      "id": "1",
+      "fullName": "Sarah Jenkins",
+      "email": "sarah.jenkins@example.com",
+      "phone": "+1 (555) 234-5678",
+      "education": "B.S. in Computer Science, University of California Berkeley",
+      "experience": "3 years of frontend development with React, TypeScript, and modern CSS",
+      "resumeLink": "https://example.com/resumes/sarah-jenkins-resume.pdf",
+      "createdAt": "2026-10-28T10:15:00.000Z"
+    },
+    {
+      "id": "2",
+      "fullName": "Michael Chang",
+      "email": "m.chang@example.com",
+      "phone": "+1 (555) 876-5432",
+      "education": "B.A. in Digital Interaction & Design, New York University",
+      "experience": "4 years of UX research and Figma product design for fintech startups",
+      "resumeLink": "https://example.com/resumes/michael-chang-portfolio.pdf",
+      "createdAt": "2026-10-29T14:30:00.000Z"
+    },
+    {
+      "id": "3",
+      "fullName": "Emily Rodriguez",
+      "email": "emily.rodriguez@example.com",
+      "phone": "+1 (555) 432-1098",
+      "education": "B.S. in Information Systems, University of Texas at Austin",
+      "experience": "1 year of junior web development focusing on responsive UI and REST APIs",
+      "resumeLink": "https://example.com/resumes/emily-rodriguez-resume.pdf",
+      "createdAt": "2026-10-30T09:00:00.000Z"
+    },
+    {
+      "fullName": "7ttv",
+      "email": "mkdir@gmail.com",
+      "phone": "338928999",
+      "education": "vfnvskjn",
+      "experience": "vnvn",
+      "resumeLink": "https://drive.com",
+      "createdAt": "2026-10-30T13:26:40.184Z",
+      "id": "fnFp3nZWKBk"
+    }
+  ],
+  "applications": [
+    {
+      "id": "1",
+      "jobId": "1",
+      "jobTitle": "Frontend React Developer",
+      "company": "Apex Cloud Technologies",
+      "candidateName": "Sarah Jenkins",
+      "email": "sarah.jenkins@example.com",
+      "phone": "+1 (555) 234-5678",
+      "education": "B.S. in Computer Science, University of California Berkeley",
+      "experience": "3 years of frontend development with React, TypeScript, and modern CSS",
+      "resumeLink": "https://example.com/resumes/sarah-jenkins-resume.pdf",
+      "appliedDate": "2026-10-28",
+      "status": "Shortlisted"
+    },
+    {
+      "id": "2",
+      "jobId": "3",
+      "jobTitle": "UI/UX Product Designer",
+      "company": "Elevate Studio",
+      "candidateName": "Michael Chang",
+      "email": "m.chang@example.com",
+      "phone": "+1 (555) 876-5432",
+      "education": "B.A. in Digital Interaction & Design, New York University",
+      "experience": "4 years of UX research and Figma product design for fintech startups",
+      "resumeLink": "https://example.com/resumes/michael-chang-portfolio.pdf",
+      "appliedDate": "2026-10-29",
+      "status": "Pending"
+    },
+    {
+      "id": "3",
+      "jobId": "4",
+      "jobTitle": "Junior Web Developer",
+      "company": "BrightWave Media",
+      "candidateName": "Emily Rodriguez",
+      "email": "emily.rodriguez@example.com",
+      "phone": "+1 (555) 432-1098",
+      "education": "B.S. in Information Systems, University of Texas at Austin",
+      "experience": "1 year of junior web development focusing on responsive UI and REST APIs",
+      "resumeLink": "https://example.com/resumes/emily-rodriguez-resume.pdf",
+      "appliedDate": "2026-10-30",
+      "status": "Accepted"
+    },
+    {
+      "jobId": "4",
+      "jobTitle": "Junior Web Developer",
+      "company": "BrightWave Media",
+      "candidateName": "7ttv",
+      "email": "mkdir@gmail.com",
+      "phone": "338928999",
+      "education": "vfnvskjn",
+      "experience": "vnvn",
+      "resumeLink": "https://drive.com",
+      "appliedDate": "2026-10-30",
+      "status": "Pending",
+      "id": "QlZShJCUtTs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

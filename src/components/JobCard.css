@@ -1,0 +1,134 @@
+.job-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.job-company {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--blue-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.job-title {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--navy-primary);
+  line-height: 1.35;
+}
+
+.job-title a {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.job-title a:hover {
+  color: var(--blue-accent);
+}
+
+.job-type-badge {
+  flex-shrink: 0;
+}
+
+.job-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-item svg {
+  color: var(--text-muted);
+}
+
+.salary-text {
+  font-weight: 600;
+  color: var(--navy-primary);
+}
+
+.job-card-description {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.job-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.skill-chip {
+  background-color: var(--bg-subtle);
+  color: var(--navy-light);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.skill-chip-more {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  align-self: center;
+}
+
+.job-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 480px) {
+  .job-card {
+    padding: 18px;
+  }
+  .job-card-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .job-card-actions a,
+  .job-card-actions button {
+    width: 100%;
+  }
+}
