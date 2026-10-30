@@ -18,11 +18,13 @@ if (!existsSync(DB_FILE)) {
 console.log(`Starting CareerConnect JSON Server backend on ${HOST}:${PORT}...`);
 console.log(`Serving database file: ${DB_FILE}`);
 
-const cmd = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+const isWin = process.platform === 'win32';
+const cmd = isWin ? 'npx.cmd' : 'npx';
 const args = ['json-server', DB_FILE, '--host', HOST, '--port', String(PORT)];
 
 const serverProcess = spawn(cmd, args, {
   stdio: 'inherit',
+  shell: isWin,
   env: {
     ...process.env,
     PORT: String(PORT),
